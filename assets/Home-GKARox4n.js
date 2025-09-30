@@ -1,0 +1,1 @@
+import{c as s,j as o}from"./index-DU0PUxJ_.js";function m(){const t=s.c(1);let e;return t[0]===Symbol.for("react.memo_cache_sentinel")?(e=o.jsx("div",{className:"space-y-8"}),t[0]=e):e=t[0],e}export{m as default};
