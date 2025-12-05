@@ -1,0 +1,1 @@
+const t={PER_PET_MONTHLY:"P-01B964946R701620HNDPMUVA",PER_PET_YEARLY:"P-4V1531673F796000SNDPMUVA"};function a(e){switch(e){case"active":return"default";case"pending":return"secondary";case"inactive":case"expired":case"cancelled":return"destructive";default:return"outline"}}export{t as P,a as g};
