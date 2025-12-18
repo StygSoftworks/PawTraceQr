@@ -1,0 +1,4 @@
+import{s as o}from"./index-Dd9VGw46.js";async function d(a,r=7){const s=new Date(Date.now()-r*864e5).toISOString(),{data:t,error:n}=await o.from("scan_events").select(`
+      id, pet_id, short_id, scanned_at, referrer, city, region, country, lat, lng,
+      pets!inner ( id, name, owner_id )
+    `).gte("scanned_at",s).order("scanned_at",{ascending:!1});if(n)throw n;return(t??[]).filter(e=>e.pets?.owner_id===a).map(e=>({id:e.id,pet_id:e.pet_id,short_id:e.short_id,scanned_at:e.scanned_at,referrer:e.referrer,city:e.city,region:e.region,country:e.country,lat:e.lat,lng:e.lng,pet_name:e.pets.name}))}async function _(a,r=30){const s=new Date(Date.now()-r*864e5).toISOString(),{error:t,count:n}=await o.from("scan_events").select("id",{count:"exact",head:!0}).eq("pet_id",a).gte("scanned_at",s);if(t)throw t;return n??0}export{_ as c,d as l};
