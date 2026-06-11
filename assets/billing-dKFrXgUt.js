@@ -1,1 +1,0 @@
-const t=15;function n(e){switch(e){case"active":return"default";case"pending_payment":return"secondary";case"inactive":return"destructive";default:return"outline"}}function a(e){switch(e){case"active":return"Active";case"pending_payment":return"Pending Payment";case"inactive":return"Inactive";default:return"Unknown"}}export{t as T,n as a,a as g};

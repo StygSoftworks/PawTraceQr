@@ -1,1 +1,0 @@
-import{s as e}from"./index-D8XAVUkQ.js";async function n(r,a){const{data:t,error:s}=await e.rpc("assign_tag_to_existing_pet",{p_short_id:r,p_pet_id:a});if(s)throw s;if(!t||t.length===0)throw new Error("Assignment failed");return t[0]}async function o(r){const{data:a,error:t}=await e.rpc("get_user_tags_summary",{p_user_id:r});if(t)throw t;return a??[]}export{n as a,o as g};
